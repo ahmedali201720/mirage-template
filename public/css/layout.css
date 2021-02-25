@@ -126,7 +126,7 @@
 }
 
 #small-header {
-    padding: 0.625rem 0.625rem;
+    padding: 0.925rem 0.625rem;
     background-image: linear-gradient(to right bottom, #faf8f6c2, #faf8f6c2), url('../../assets/images/background2.jpg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
@@ -138,12 +138,21 @@
 }
 
 #sidebar-toggler {
+    position: relative;
     width: 35px;
     height: 35px;
     border: none;
+    box-shadow: 0 0 5px grey;
     border-radius: 5px;
     color: var(--mainOrange);
     outline: none;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#sidebar-toggler:hover {
+    cursor: pointer;
+    color: var(--mainGrey);
 }
 
 .small-logo-container img {
