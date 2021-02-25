@@ -1,0 +1,32 @@
+.banner-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-banner-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-banner-caption .title {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: var(--mainOrange);
+    background-color: #ffffff;
+    clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100%);
+    padding: 0.625rem 0.925rem;
+}
+
+.carousel-banner-caption .subtitle {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../assets/images/next.png');
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../assets/images/prev.png');
+}

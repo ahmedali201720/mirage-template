@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="../public/css/owl.carousel.min.css">
     <!-- Style sheet for fontawesome assets -->
+    <link rel="stylesheet" href="../public/css/owl.custom.css">
     <link rel="stylesheet" href="../public/css/common.css">
     <link rel="stylesheet" href="../public/css/layout.css">
     <link rel="stylesheet" href="../public/css/home.css">
@@ -50,9 +51,9 @@
                 </div>
 
                 <div class="col-xl-4 d-flex justify-content-around px-2">
-                    <button class="header-button">فتح حساب تجريبى</button>
-                    <button class="header-button">فتح حساب جديد</button>
-                    <button class="header-button">شاشة الأسعار</button>
+                    <a class="header-button" href="#">فتح حساب تجريبى</a>
+                    <a class="header-button" href="#">فتح حساب جديد</a>
+                    <a class="header-button" href="#">شاشة الأسعار</a>
                 </div>
 
                 <div class="col-xl-2 d-flex justify-content-center align-items-center">
@@ -99,21 +100,60 @@
 
     </header>
 
-    <section class="banner-section">
+    <section id="banner-section">
 
-        <div class="banner-carousel owl-carousel">
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
 
-            <div class="item">
-                <div class="banner-item">
-                    <img src="../assets/images/banner-back1.jpg" alt="background" class="banner-img">
+            <ol class="carousel-indicators">
+                <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                <li data-target="#bannerCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item banner-item active">
+                    <img src="../assets/images/banner-back1.jpg" alt="background">
+                    <div class="carousel-caption carousel-banner-caption">
+                        <p class="title">
+                            ميراج لتداول الأوراق المالية
+                        </p>
+                        <p class="subtitle">
+                            ميراج نتشرف بإن نقدم لك أفضل خدمات التداول فى البورصة باقل تكلفة ممكنة
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item banner-item">
+                    <img src="../assets/images/banner-back2.jpg" alt="background">
+                    <div class="carousel-caption carousel-banner-caption">
+                        <p class="title">
+                            ميراج لتداول الأوراق المالية
+                        </p>
+                        <p class="subtitle">
+                            ميراج نتشرف بإن نقدم لك أفضل خدمات التداول فى البورصة باقل تكلفة ممكنة
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item banner-item">
+                    <img src="../assets/images/banner-back3.png" alt="background">
+                    <div class="carousel-caption carousel-banner-caption">
+                        <p class="title">
+                            ميراج لتداول الأوراق المالية
+                        </p>
+                        <p class="subtitle">
+                            نساعد الشركات علي التغلب علي المشاكل المالية بتقديم أفضل الحلول بدراسات متخصصة نتشرف بأن
+                            نقدم أفضل خدمات التداول في
+                            البورصة بأقل تكلفة ممكنة
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="item">
-                <div class="banner-item">
-                    <img src="../assets/images/banner-back2.jpg" alt="background" class="banner-img">
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
 
         </div>
 

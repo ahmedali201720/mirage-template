@@ -1,0 +1,5 @@
+@keyframes animateBackgroundImage {
+    100% {
+        background-position: 0px -3000px;
+    }
+}

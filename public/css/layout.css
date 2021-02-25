@@ -1,11 +1,18 @@
+@import './animation.css';
+/* ************************************************************************************************************************ */
+
+/* ************************************************************************************************************************ */
+
 #top-header {
     padding: 0.625rem 0.825rem;
-    background-image: linear-gradient(to right bottom, #f26b2cc4, #f26b2cc4), url('../../assets/images/background.gif');
-    /* background-color: var(--mainOrange); */
+    background-image: linear-gradient(to right bottom, #f26b2cad, #f26b2cad), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    background-attachment: fixed;
     color: white;
     font-weight: 600;
     font-size: 14px;
-    border-bottom: 1px solid white;
 }
 
 #top-header .telephone-number, #top-header .contact-email {
@@ -28,10 +35,14 @@
     color: white;
     font-size: 14px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .header-button:hover {
     background-color: #91cc44;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .language-link {
@@ -71,7 +82,7 @@
 }
 
 .top-header-link:hover {
-    background-color: var(--mainOrange);
+    background-color: var(--mainGrey);
     color: white;
 }
 
