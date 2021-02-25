@@ -94,3 +94,42 @@
     border-radius: 7px;
     box-shadow: 2px 2px 2px grey;
 }
+
+#small-header {
+    padding: 0.625rem 0.625rem;
+    background-image: linear-gradient(to right bottom, #faf8f6c2, #faf8f6c2), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    background-attachment: fixed;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#sidebar-toggler {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: var(--mainOrange);
+    outline: none;
+}
+
+.small-logo-container img {
+    width: 60px;
+    height: auto;
+}
+
+.small-header-button {
+    display: block;
+    height: fit-content;
+    font-size: 12px;
+    margin: 0 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.small-header-button {
+    text-decoration: none;
+}

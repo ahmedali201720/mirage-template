@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="../public/css/owl.custom.css">
     <link rel="stylesheet" href="../public/css/common.css">
     <link rel="stylesheet" href="../public/css/layout.css">
+    <link rel="stylesheet" href="../public/css/layout.responsive.css">
     <link rel="stylesheet" href="../public/css/home.css">
+    <link rel="stylesheet" href="../public/css/home.responsive.css">
     <title>Mirage | Home</title>
 </head>
 
 <body>
 
-    <header id="top-header">
+    <header id="top-header" class="d-lg-block d-none">
 
         <div class="container-fluid">
 
@@ -69,7 +71,7 @@
 
     </header>
 
-    <header id="main-header">
+    <header id="main-header" class="d-md-block d-none">
 
         <div class="container-fluid">
 
@@ -92,6 +94,35 @@
 
                 <div class="col-xl-2 d-flex justify-content-center align-items-center">
                     <div class="header-date cursor-pointer"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <header id="small-header" class="d-lg-none d-block">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-5 d-flex justify-content-start align-items-center">
+
+                    <button id="sidebar-toggler">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="small-logo-container mx-1">
+                        <img src="../assets/images/mirage-logo.png" alt="logo">
+                    </div>
+
+                </div>
+
+                <div class="col-7 d-flex justify-content-around align-items-center">
+                    <a class="header-button small-header-button" href="#">حساب تجريبى</a>
+                    <a class="header-button small-header-button" href="#">حساب جديد</a>
                 </div>
 
             </div>

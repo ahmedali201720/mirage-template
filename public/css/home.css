@@ -1,3 +1,5 @@
+/* banner section styles */
+
 .banner-item img {
     width: 100%;
     height: auto;
@@ -30,3 +32,5 @@
 .carousel-control-prev-icon {
     background-image: url('../../assets/images/prev.png');
 }
+
+/* End banner section styles */
