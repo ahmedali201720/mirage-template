@@ -29,6 +29,7 @@
 }
 
 .header-button {
+    position: relative;
     padding: 0.325rem 0.825rem;
     background-color: var(--greenColor);
     border: none;
@@ -40,10 +41,29 @@
 
 .header-button:hover {
     text-decoration: none;
-    background-color: #91cc44;
+    background-color: #91cc43;
     color: white;
     font-weight: 600;
     cursor: pointer;
+}
+
+.header-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--greenColor);
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.header-button:hover::after {
+    -webkit-transform: scale(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 .language-link {
@@ -92,6 +112,7 @@
 .top-header-link:hover {
     text-decoration: none;
     background-color: var(--mainGrey);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 50% 90%, 40% 100%, 0 100%);
     color: white;
 }
 
