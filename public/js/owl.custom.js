@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(".banner-carousel").owlCarousel({
         margin: 0,
-        loop: false,
+        loop: true,
         mouseDrag: true,
         touchDrag: true,
         nav: true,
@@ -13,6 +13,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             }
-        }
+        },
+        singleItem: true
     });
 });
