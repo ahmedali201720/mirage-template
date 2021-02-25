@@ -24,3 +24,11 @@ body {
 .cursor-pointer:hover {
     cursor: pointer;
 }
+
+.dynamic-text-align:lang(ar) {
+    text-align: right;
+}
+
+.dynamic-text-align:lang(en) {
+    text-align: left;
+}

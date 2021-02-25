@@ -16,10 +16,26 @@
 
 /* ********************************************************************************************************* */
 
-@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 576px) {
+    .banner-item img {
+        height: 300px !important;
+    }
+}
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .banner-item img {
+        height: 400px !important;
+    }
+}
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .banner-item img {
+        height: 450px !important;
+    }
+}
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .banner-item img {
+        height: 500px !important;
+    }
+}

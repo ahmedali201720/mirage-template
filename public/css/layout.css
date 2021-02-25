@@ -39,6 +39,7 @@
 }
 
 .header-button:hover {
+    text-decoration: none;
     background-color: #91cc44;
     color: white;
     font-weight: 600;
@@ -51,6 +52,7 @@
 }
 
 .language-link:hover {
+    text-decoration: none;
     color: rgb(255, 236, 202);
 }
 
@@ -66,6 +68,12 @@
 .header-logo {
     width: 70px;
     height: auto;
+    transition: transform 1.5s;
+}
+
+.header-logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .top-header-link {
@@ -82,6 +90,7 @@
 }
 
 .top-header-link:hover {
+    text-decoration: none;
     background-color: var(--mainGrey);
     color: white;
 }
@@ -132,4 +141,89 @@
 
 .small-header-button {
     text-decoration: none;
+}
+
+#sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: rgb(218, 214, 214);
+    padding: 1.2rem 0;
+    z-index: 500;
+}
+
+.sidebar-header {
+    position: relative;
+}
+
+.sidebar-close-btn {
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none !important;
+    color: var(--mainGrey);
+    background-color: transparent;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .6s ease-in-out;
+}
+
+.sidebar-close-btn:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.sidebar-close-btn:lang(ar) {
+    left: 10px;
+}
+
+.sidebar-close-btn:lang(en) {
+    right: 10px;
+}
+
+.sidebar-header .no-login-container img {
+    width: 80px;
+    height: auto;
+    transition: transform 1s ease-in-out;
+}
+
+.sidebar-header .no-login-container img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.sidebar-body {
+    width: 100%;
+    padding: 0.625rem 0;
+}
+
+.sidebar-link {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mainGrey);
+    padding: 0.625rem 1rem;
+    transition: background 0.6s;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--secondaryGrey) 50%);
+    background-size: 300%;
+}
+
+.sidebar-link:hover {
+    background-color: var(--secondaryGrey);
+    color: white !important;
+    font-weight: 700;
+    text-decoration: none;
+    color: grey;
+    background-position: 100%;
+    transform: translateX(0.2rem);
+}
+
+.sidebar-link .lang-img {
+    width: 20px;
+    height: auto;
 }

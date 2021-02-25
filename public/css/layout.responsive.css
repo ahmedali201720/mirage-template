@@ -4,7 +4,19 @@
 
 @media only screen and (max-width: 320px) {}
 
-@media only screen and (max-width: 280px) {}
+@media only screen and (max-width: 280px) {
+    .small-logo-container img {
+        width: 40px;
+        height: auto;
+    }
+    #sidebar-toggler {
+        width: 30px;
+        height: 30px;
+    }
+    .small-header-button {
+        font-size: 10px;
+    }
+}
 
 /* ********************************************************************************************************* */
 

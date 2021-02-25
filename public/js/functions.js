@@ -1,17 +1,9 @@
-$(document).ready(() => {
 
-    const monthNames_en = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"];
+function getWindowSize() {
+    return $(window).width()
+}
 
-    var monthNames_ar = ["يناير", "فبراير", "مارس", "إبريل", "مايو", "يونيو",
-        "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+function openSidebar(sidebar) {
 
-    const dateObj = new Date();
-    const month = monthNames_ar[dateObj.getMonth()];
-    const day = String(dateObj.getDate()).padStart(2, '0');
-    const year = dateObj.getFullYear();
-    const output = day + ' ' + month + ',' + year;
+}
 
-    document.querySelector('.header-date').textContent = output;
-
-});
