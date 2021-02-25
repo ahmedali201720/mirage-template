@@ -59,6 +59,35 @@ function openSidebar(sidebar) {
 }
 
 function closeSidebar(sidebar) {
-    sidebar.css('width', '0')
+    $(".sidebar-body").fadeOut(300)
+    setTimeout(function () {
+        $(".sidebar-header").fadeOut(300)
+    }, 700)
+    setTimeout(function () {
+        sidebar.animate({
+            width: '0'
+        }, 700)
+    })
+}
+
+function getTime() {
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+    return hours + ':' + minutes + ':' + seconds;
+}
+
+function getDate() {
+    const monthNames_en = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    var monthNames_ar = ["يناير", "فبراير", "مارس", "إبريل", "مايو", "يونيو",
+        "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+    const dateObj = new Date();
+    const month = monthNames_ar[dateObj.getMonth()];
+    const day = String(dateObj.getDate()).padStart(2, '0');
+    const year = dateObj.getFullYear();
+    const output = day + ' ' + month + ',' + year;
+    return output;
 }
 
