@@ -15,6 +15,11 @@ $(document).ready(() => {
 
     const sidebarToggler = $("#sidebar-toggler");
     const sidebarCloseBtn = $("#sidebar-close-btn");
-    sidebarToggler.click(openSidebar($(this)));
+    sidebarToggler.click(function () {
+        openSidebar($("#sidebar"));
+    });
+    sidebarCloseBtn.click(function () {
+        closeSidebar($("#sidebar"));
+    });
 
 });

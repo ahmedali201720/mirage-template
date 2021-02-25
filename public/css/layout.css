@@ -179,6 +179,7 @@
 
 .sidebar-header {
     position: relative;
+    display: none;
 }
 
 .sidebar-close-btn {
@@ -218,6 +219,7 @@
 }
 
 .sidebar-body {
+    display: none;
     width: 100%;
     padding: 0.625rem 0;
 }
