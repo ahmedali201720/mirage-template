@@ -1,0 +1,85 @@
+#top-header {
+    padding: 0.625rem 0.825rem;
+    background-image: linear-gradient(to right bottom, #f26b2cc4, #f26b2cc4), url('../../assets/images/background.gif');
+    /* background-color: var(--mainOrange); */
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+}
+
+#top-header .telephone-number, #top-header .contact-email {
+    display: inline-block;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+}
+
+.header-link:hover, #top-header .telephone-number:hover {
+    color: rgb(255, 236, 202);
+}
+
+.header-button {
+    padding: 0.325rem 0.825rem;
+    background-color: var(--greenColor);
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.header-button:hover {
+    background-color: #91cc44;
+}
+
+.language-link {
+    text-decoration: none;
+    color: white;
+}
+
+.language-link:hover {
+    color: rgb(255, 236, 202);
+}
+
+.language-link img {
+    width: 20px;
+    height: 20px;
+}
+
+#main-header {
+    padding: 0 0.825rem;
+}
+
+.header-logo {
+    width: 70px;
+    height: auto;
+}
+
+.top-header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--mainGrey);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.425rem 0.625rem;
+    -webkit-transition: background-color 0.8s;
+    transition: background-color 0.8s;
+}
+
+.top-header-link:hover {
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+.header-date {
+    background-color: var(--mainOrange);
+    color: white;
+    font-weight: 600;
+    padding: 0.325rem 0.625rem;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px grey;
+}
