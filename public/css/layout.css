@@ -427,3 +427,50 @@
 .mobile-header-link:hover {
     color: var(--mainOrange);
 }
+
+/* ****************************************************************************************************** */
+
+#loading-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef0f5ec;
+    z-index: 5000;
+}
+
+.overlay-loading-logo img {
+    width: 200px;
+    height: auto;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
