@@ -5,14 +5,6 @@ $(document).ready(() => {
         $("#date-time-content .date").text(getDate());
     }, 1000);
 
-    $("#date-time-content").mouseenter(function () {
-        $(".time", this).show(200);
-    });
-
-    $("#date-time-content").mouseleave(function () {
-        $(".time", this).hide(200);
-    });
-
     // *******************************************************************************************
 
     const sidebarToggler = $("#sidebar-toggler");
@@ -23,5 +15,7 @@ $(document).ready(() => {
     sidebarCloseBtn.click(function () {
         closeSidebar($("#sidebar"));
     });
+
+    // *******************************************************************************************
 
 });

@@ -104,12 +104,20 @@ function displayElement(element, type, duration) {
         element.fadeIn(duration);
     else if (type == 'show')
         element.show(duration);
+    else
+        return;
 }
 
 function hideElement(element, type, duration) {
     if (type == 'fade')
         element.fadeOut(duration);
-    else if (type == 'show')
+    else if (type == 'hide')
         element.hide(duration);
+    else
+        return;
+}
+
+function changeVisibility(element, action) {
+    element.css('visibility', action);
 }
 
