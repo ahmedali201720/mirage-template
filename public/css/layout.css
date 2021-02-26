@@ -116,13 +116,28 @@
     color: white;
 }
 
-.header-date {
+.fixed-date-container {
+    position: fixed;
+    bottom: 5%;
+    z-index: 1000;
     background-color: var(--mainOrange);
     color: white;
     font-weight: 600;
-    padding: 0.325rem 0.625rem;
+    padding: 0.825rem;
     border-radius: 7px;
     box-shadow: 2px 2px 2px grey;
+}
+
+.fixed-date-container:lang(ar) {
+    left: 5%;
+}
+
+.fixed-date-container:lang(en) {
+    right: 5%;
+}
+
+#date-time-content .time {
+    display: none;
 }
 
 #small-header {

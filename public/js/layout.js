@@ -1,8 +1,17 @@
 $(document).ready(() => {
 
     setInterval(function () {
-        document.querySelector('.header-date').textContent = getTime() + '\xa0\xa0\xa0\xa0' + getDate()
+        $("#date-time-content .time").text(getTime());
+        $("#date-time-content .date").text(getDate());
     }, 1000);
+
+    $("#date-time-content").mouseenter(function () {
+        $(".time", this).show(200);
+    });
+
+    $("#date-time-content").mouseleave(function () {
+        $(".time", this).hide(200);
+    });
 
     // *******************************************************************************************
 
