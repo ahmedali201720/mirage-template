@@ -456,21 +456,3 @@
     animation-iteration-count: 2;
     animation-timing-function: ease;
 }
-
-@-webkit-keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
