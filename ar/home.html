@@ -25,6 +25,8 @@
 
 <body>
 
+    <!-- Top header for md , lg and xl screens -->
+
     <header id="top-header" class="d-md-block d-none">
 
         <div class="container-fluid">
@@ -78,6 +80,50 @@
 
     </header>
 
+    <!-- main header for md , lg and xl screens -->
+
+    <header id="main-header" class="d-md-block d-none">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-xl-1 col-lg-1 col-md-2 text-center">
+                    <a href="#" class="header-logo-link">
+                        <img class="header-logo" src="../assets/images/mirage-logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="col-xl-11 col-lg-11 col-md-10 d-flex justify-content-start align-items-center">
+                    <a href="#" class="top-header-link text-center">الرئيسية</a>
+                    <a href="#" class="top-header-link text-center">فتح حساب</a>
+                    <a href="#" class="top-header-link text-center">الأخبار</a>
+                    <a href="#" class="top-header-link text-center">الأجندة الإقتصادية</a>
+                    <a href="#" class="top-header-link text-center">بيان الشركات</a>
+                    <a href="#" class="top-header-link d-lg-flex d-md-none">تقارير ميراج</a>
+                    <a href="#" class="top-header-link d-lg-flex d-md-none">عروض ميراج</a>
+                    <a href="#" class="top-header-link d-lg-flex d-md-none">اتصل بنا</a>
+                    <div class="dropdown-link d-lg-none d-md-flex">
+                        <button class="dropdown-toggler">
+                            المزيد <i class="fa fa-caret-down mx-1"></i>
+                        </button>
+                        <div class="dropdown-options custom-dropdown">
+                            <a href="#" class="dropdown-option">تقارير ميراج</a>
+                            <a href="#" class="dropdown-option">عروض ميراج</a>
+                            <a href="#" class="dropdown-option">اتصل بنا</a>
+                            <a href="#" class="dropdown-option">عن الشركة</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Top header for sm and xs screens -->
+
     <header id="sm-top-header" class="d-block d-md-none">
         <div class="container-fluid">
             <div class="row">
@@ -107,52 +153,9 @@
         </div>
     </header>
 
-    <header id="main-header" class="d-md-block d-none">
+    <!-- main header for sm and xs screens -->
 
-        <div class="container-fluid">
-
-            <div class="row">
-
-                <div class="col-xl-1 col-lg-1 col-md-2 text-center">
-                    <a href="#" class="header-logo-link">
-                        <img class="header-logo" src="../assets/images/mirage-logo.png" alt="logo">
-                    </a>
-                </div>
-
-                <div class="col-xl-11 col-lg-11 col-md-10 d-flex justify-content-start align-items-center">
-                    <a href="#" class="top-header-link text-center">الرئيسية</a>
-                    <a href="#" class="top-header-link text-center">فتح حساب</a>
-                    <a href="#" class="top-header-link text-center">الأخبار</a>
-                    <a href="#" class="top-header-link text-center">الأجندة الإقتصادية</a>
-                    <a href="#" class="top-header-link text-center">بيان الشركات</a>
-                    <a href="#" class="top-header-link d-lg-flex d-md-none">تقارير ميراج</a>
-                    <a href="#" class="top-header-link d-lg-flex d-md-none">عروض ميراج</a>
-                    <a href="#" class="top-header-link d-lg-flex d-md-none">اتصل بنا</a>
-                    <div class="nav-more-link dropdown-toggler d-lg-none d-md-flex">المزيد
-                        <!-- <i class="fa fa-caret-down mx-1"></i> -->
-                        <div class="nav-link-options custom-dropdown">
-                            <a href="#" class="nav-link-option">تقارير ميراج</a>
-                            <a href="#" class="nav-link-option">عروض ميراج</a>
-                            <a href="#" class="nav-link-option">اتصل بنا</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </header>
-
-    <div class="fixed-date-container">
-        <div id="date-time-content" class="cursor-pointer">
-            <span class="time text-dark mx-2"></span>
-            <i class="fa fa-clock"></i>
-            <span class="date mx-2"></span>
-        </div>
-    </div>
-
-    <header id="small-header" class="d-lg-none d-block">
+    <header id="small-header" class="d-md-none d-block">
 
         <div class="container-fluid">
 
@@ -182,6 +185,8 @@
         </div>
 
     </header>
+
+    <!-- Sidebar for sm and xs screens -->
 
     <section id="sidebar">
 
@@ -256,6 +261,18 @@
 
 
     </section>
+
+    <!-- fixed positioned section to display date and time -->
+
+    <div class="fixed-date-container">
+        <div id="date-time-content" class="cursor-pointer">
+            <span class="time text-dark mx-2"></span>
+            <i class="fa fa-clock"></i>
+            <span class="date mx-2"></span>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
 
     <section id="banner-section">
 
