@@ -7,22 +7,19 @@
 
 .carousel-banner-caption {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .carousel-banner-caption .title {
     font-size: 1.5rem !important;
     font-weight: 700;
     color: var(--mainOrange);
-    background-color: #ffffff;
+    background-color: #ffffffb0;
     clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100%);
     padding: 0.625rem 0.925rem;
 }
 
 .carousel-banner-caption .subtitle {
     font-size: 1.2rem;
-    margin-top: 2rem;
 }
 
 .carousel-control-next-icon {
