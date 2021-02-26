@@ -219,7 +219,7 @@
 
 .fixed-date-container {
     position: fixed;
-    bottom: 5%;
+    bottom: 10%;
     z-index: 1000;
     background-color: var(--mainOrange);
     color: white;
@@ -230,11 +230,11 @@
 }
 
 .fixed-date-container:lang(ar) {
-    left: 5%;
+    left: 2%;
 }
 
 .fixed-date-container:lang(en) {
-    right: 5%;
+    right: 2%;
 }
 
 .fixed-date-container::after {
@@ -431,7 +431,7 @@
 /* ****************************************************************************************************** */
 
 #loading-overlay {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
