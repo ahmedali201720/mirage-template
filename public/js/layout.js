@@ -9,6 +9,21 @@ $(document).ready(() => {
         $("#date-time-content .date").text(getDate());
     }, 1000);
 
+    $("#date-container-toggler").click(function () {
+        $(this).fadeOut(300)
+        const parent = $(this).parent();
+        parent.find("#date-time-content").hide(300);
+        setTimeout(function () {
+            parent.find("#date-container-opener").show(200)
+        }, 100)
+    });
+
+    $("#date-container-opener").click(function () {
+        const parent = $(this).parent();
+        parent.find("#date-time-content").show(200);
+        parent.find("#date-container-toggler").show(200);
+    });
+
     // *******************************************************************************************
 
     const sidebarToggler = $("#sidebar-toggler");
