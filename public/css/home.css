@@ -36,10 +36,15 @@
 
 .acme-news-ticker-box {
     border: none;
-    background-image: linear-gradient(to right bottom, #f26b2cda, #f26b2cda), url('../../assets/images/background2.jpg');
+    background-image: linear-gradient(to right bottom, #f26b2cce, #f26b2cce), url('../../assets/images/background2.jpg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
+}
+
+.acme-news-ticker {
+    margin-top: 0;
+    border: none;
 }
 
 .ticker-item a {
