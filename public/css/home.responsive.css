@@ -16,6 +16,9 @@
         border-radius: 7px;
         padding: 0.425rem;
     }
+    .squareContent h2 {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -30,6 +33,9 @@
         border-radius: 7px;
         padding: 0.425rem;
         font-weight: 700;
+    }
+    .squareContent h2 {
+        font-size: 22px;
     }
 }
 
@@ -47,6 +53,9 @@
         background-color: rgba(255, 255, 255, 0.089);
         border-radius: 7px;
         padding: 0.425rem;
+    }
+    .squareContent h2 {
+        font-size: 22px;
     }
 }
 
@@ -72,6 +81,9 @@
         padding: 0.425rem;
         font-size: 1.2rem;
     }
+    .squareContent h2 {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -84,10 +96,22 @@
     .banner-item img {
         height: 450px !important;
     }
+    .squareContent h2 {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .banner-item img {
         height: 475px !important;
+    }
+    .squareContent h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .squareContent h2 {
+        font-size: 30px;
     }
 }
