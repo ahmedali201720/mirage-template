@@ -40,6 +40,7 @@
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
+    z-index: 2000;
 }
 
 .marquee-content-items>li>a {
@@ -139,3 +140,5 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
+/* ***************************************************************************************************** */
