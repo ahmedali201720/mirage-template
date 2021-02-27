@@ -32,3 +32,11 @@ body {
 .dynamic-text-align:lang(en) {
     text-align: left;
 }
+
+.dynamic-text-align-reverse:lang(ar) {
+    text-align: left;
+}
+
+.dynamic-text-align-reverse:lang(en) {
+    text-align: right;
+}

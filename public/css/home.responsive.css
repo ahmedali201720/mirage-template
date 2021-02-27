@@ -84,6 +84,10 @@
     .squareContent h2 {
         font-size: 25px;
     }
+    .feedback-item .quote {
+        height: 200px;
+        max-height: 200px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,6 +103,10 @@
     .squareContent h2 {
         font-size: 20px;
     }
+    .feedback-item .quote {
+        height: 130px;
+        max-height: 130px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -108,10 +116,18 @@
     .squareContent h2 {
         font-size: 25px;
     }
+    .feedback-item .quote {
+        height: 170px;
+        max-height: 170px;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
     .squareContent h2 {
         font-size: 30px;
+    }
+    .feedback-item .quote {
+        height: 130px;
+        max-height: 130px;
     }
 }
