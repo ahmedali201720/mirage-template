@@ -1,8 +1,29 @@
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .footer-content {
+        padding: 2.5rem 0.525rem;
+    }
+    .contact-link {
+        justify-content: center;
+    }
+}
 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 414px) {
+    .footer-content {
+        padding: 2.5rem 0.525rem;
+    }
+    .contact-link {
+        justify-content: center;
+    }
+}
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    .footer-content {
+        padding: 2.5rem 0.525rem;
+    }
+    .contact-link {
+        justify-content: center;
+    }
+}
 
 @media only screen and (max-width: 280px) {
     .small-logo-container img {
@@ -15,6 +36,12 @@
     }
     .small-header-button {
         font-size: 10px;
+    }
+    .footer-content {
+        padding: 2.5rem 0.425rem;
+    }
+    .contact-link {
+        justify-content: center;
     }
 }
 
