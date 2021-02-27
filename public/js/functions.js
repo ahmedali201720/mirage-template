@@ -121,3 +121,16 @@ function changeVisibility(element, action) {
     element.css('visibility', action);
 }
 
+function showFixedDateTime(parent) {
+    parent.find("#date-time-content").show(200);
+    parent.find("#date-container-toggler").show(200);
+}
+
+function hideFixedDateTime(parent = $(".fixed-date-container")) {
+    $("#date-container-toggler").fadeOut(300);
+    parent.find("#date-time-content").hide(300);
+    setTimeout(function () {
+        parent.find("#date-container-opener").show(200)
+    }, 100)
+}
+

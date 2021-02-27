@@ -645,3 +645,37 @@
 .footer-social-link .fa-youtube {
     color: red;
 }
+
+/* ************************************************************************************************** */
+
+#go-up {
+    position: fixed;
+    bottom: 5%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--mainOrange);
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 10000;
+    display: none;
+}
+
+#go-up i {
+    animation: bubbleButton 0.4s infinite;
+}
+
+#go-up i:hover {
+    animation-play-state: paused;
+}
+
+#go-up:lang(ar) {
+    right: 4%;
+}
+
+#go-up:lang(en) {
+    left: 4%;
+}

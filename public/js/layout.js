@@ -1,8 +1,16 @@
 $(document).ready(() => {
 
+    var fixedDateContainerOpened = false;
+
     setTimeout(function () {
         $("#loading-overlay").fadeOut(600);
     }, 5000);
+
+    // *******************************************************************************************************
+
+    hideFixedDateTime();
+
+    // *******************************************************************************************************
 
     setInterval(function () {
         $("#date-time-content .time").text(getTime());
@@ -10,18 +18,19 @@ $(document).ready(() => {
     }, 1000);
 
     $("#date-container-toggler").click(function () {
-        $(this).fadeOut(300)
-        const parent = $(this).parent();
-        parent.find("#date-time-content").hide(300);
-        setTimeout(function () {
-            parent.find("#date-container-opener").show(200)
-        }, 100)
+        if (fixedDateContainerOpened) {
+            const parent = $(this).parent();
+            hideFixedDateTime(parent);
+            fixedDateContainerOpened = false;
+        }
     });
 
     $("#date-container-opener").click(function () {
-        const parent = $(this).parent();
-        parent.find("#date-time-content").show(200);
-        parent.find("#date-container-toggler").show(200);
+        if (!fixedDateContainerOpened) {
+            const parent = $(this).parent();
+            showFixedDateTime(parent);
+            fixedDateContainerOpened = true;
+        }
     });
 
     // *******************************************************************************************
