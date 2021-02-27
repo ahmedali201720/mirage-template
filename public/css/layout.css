@@ -300,6 +300,10 @@
 /* *********************************************************************************************************** */
 
 #small-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
     padding: 0.625rem 0.625rem;
     background-image: linear-gradient(to right bottom, #faf8f6c2, #faf8f6c2), url('../../assets/images/background2.jpg');
     perspective: 1000px;
@@ -309,6 +313,8 @@
     color: white;
     font-weight: 600;
     font-size: 14px;
+    box-shadow: 0 0 5px #fd781f;
+    z-index: 5000;
 }
 
 /* ********************************************************************************************************* */
