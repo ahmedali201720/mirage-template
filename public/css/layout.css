@@ -87,6 +87,13 @@
     top: 0;
     left: 0;
     padding: 0 0.825rem;
+    background-image: linear-gradient(to right bottom, #ffffffde, #ffffffe5), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    background-attachment: fixed;
+    box-shadow: 0 0 5px #fd781f;
+    z-index: 3000;
 }
 
 .header-logo {
