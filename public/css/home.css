@@ -42,4 +42,10 @@
     animation: animateBackgroundImage 100s linear infinite;
 }
 
+.marquee-content-items>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
 /* ****************************************************************************************************** */
