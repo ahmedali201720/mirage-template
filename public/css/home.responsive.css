@@ -19,6 +19,9 @@
     .squareContent h2 {
         font-size: 25px;
     }
+    .news-video-container iframe {
+        min-height: 210px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -36,6 +39,9 @@
     }
     .squareContent h2 {
         font-size: 22px;
+    }
+    .news-video-container iframe {
+        min-height: 200px;
     }
 }
 
@@ -56,6 +62,9 @@
     }
     .squareContent h2 {
         font-size: 22px;
+    }
+    .news-video-container iframe {
+        min-height: 190px;
     }
 }
 
