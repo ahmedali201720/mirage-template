@@ -41,7 +41,8 @@
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
     z-index: 2000;
-    border: 1px solid rgb(230, 218, 218);
+    border-top: 1px solid rgb(230, 218, 218);
+    border-bottom: 1px solid rgb(230, 218, 218);
     box-shadow: 0 0 10px var(--mainGrey);
 }
 
@@ -290,6 +291,7 @@
 /* *********************************************************************************************** */
 
 #news-section {
+    position: relative;
     background-image: linear-gradient(to right bottom, #db794bcc, #db794bcc), url('../../assets/images/background2.jpg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
