@@ -6,7 +6,7 @@ $(document).ready(function () {
         mouseDrag: true,
         touchDrag: true,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
