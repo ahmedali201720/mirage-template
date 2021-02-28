@@ -664,14 +664,6 @@
     display: none;
 }
 
-#go-up i {
-    animation: bubbleButton 0.4s infinite;
-}
-
-#go-up i:hover {
-    animation-play-state: paused;
-}
-
 #go-up:lang(ar) {
     right: 4%;
 }
