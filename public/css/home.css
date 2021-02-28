@@ -451,3 +451,36 @@
     border: 2px solid #fff;
     border-radius: 10px;
 }
+
+/* ************************************************************************************************************** */
+
+/* News Ticker Styles */
+
+.simple-forex-marquee-container {
+    background-image: linear-gradient(to right bottom, #636466a1, #636466a1), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+    z-index: 2000;
+    border-top: 1px solid rgb(230, 218, 218);
+    border-bottom: 1px solid rgb(230, 218, 218);
+    box-shadow: 0 0 10px var(--mainGrey);
+}
+
+.simple-forex-marquee-container .marquee-content-items {
+    list-style: none;
+}
+
+.forex-item .item-header {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding: 0.225rem;
+}
+
+.forex-item .item-info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}

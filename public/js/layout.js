@@ -67,4 +67,25 @@ $(document).ready(() => {
 
     });
 
+    $(function () {
+
+
+        let options = {
+            autostart: true,
+            property: 'value',
+            onComplete: null,
+            duration: 5000,
+            padding: 10,
+            marquee_class: '.forex-marquee',
+            container_class: '.simple-forex-marquee-container',
+            sibling_class: 0,
+            hover: true,
+            velocity: 0.05,
+            direction: 'right'
+        }
+
+        $('.simple-forex-marquee-container').SimpleMarquee(options);
+
+    });
+
 });
