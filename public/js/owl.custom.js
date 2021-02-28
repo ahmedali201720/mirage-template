@@ -6,9 +6,7 @@ $(document).ready(function () {
         mouseDrag: true,
         touchDrag: true,
         autoplay: true,
-        slideTransition: 'linear',
         autoplayTimeout: 2000,
-        autoplaySpeed: 12000,
         autoplayHoverPause: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
@@ -47,46 +45,4 @@ $(document).ready(function () {
         },
     });
 
-    $(".forex-carousel").owlCarousel({
-        margin: 0,
-        loop: true,
-        mouseDrag: true,
-        touchDrag: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
-        rtl: true,
-        responsive: {
-            0: {
-                items: 1.2
-            },
-            280: {
-                items: 1
-            },
-            400: {
-                items: 1.2
-            },
-            576: {
-                items: 2.1
-            },
-            768: {
-                items: 2.75
-            },
-            992: {
-                items: 2.1
-            },
-            1200: {
-                items: 3
-            },
-            1300: {
-                items: 3.25
-            },
-            1500: {
-                items: 3.75
-            },
-            1600: {
-                items: 4.1
-            }
-        },
-    });
 });
