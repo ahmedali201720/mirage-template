@@ -86,6 +86,6 @@ $(document).ready(() => {
 
 $('#forexTicker').breakingNews({
     direction: getPageDirection(),
-    scrollSpeed: 1,
+    scrollSpeed: 3,
     borderWidth: 0,
 });
