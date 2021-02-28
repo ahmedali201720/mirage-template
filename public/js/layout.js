@@ -47,8 +47,6 @@ $(document).ready(() => {
     // *******************************************************************************************
 
     $(function () {
-
-
         let options = {
             autostart: true,
             property: 'value',
@@ -62,14 +60,10 @@ $(document).ready(() => {
             velocity: 0.05,
             direction: 'right'
         }
-
         $('.simple-marquee-container').SimpleMarquee(options);
-
     });
 
     $(function () {
-
-
         let options = {
             autostart: true,
             property: 'value',
@@ -83,9 +77,15 @@ $(document).ready(() => {
             velocity: 0.05,
             direction: 'right'
         }
-
         $('.simple-forex-marquee-container').SimpleMarquee(options);
-
     });
 
+});
+
+// ******************************************************************************************************
+
+$('#forexTicker').breakingNews({
+    direction: getPageDirection(),
+    scrollSpeed: 1,
+    borderWidth: 0,
 });

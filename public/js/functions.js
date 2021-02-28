@@ -7,6 +7,11 @@ function getLang() {
     return $('html').attr('lang');
 }
 
+function getPageDirection() {
+    let lang = getLang();
+    return lang = 'ar' ? 'rtl' : 'ltr';
+}
+
 function openSidebar(sidebar) {
 
     if (getWindowSize() <= 576) {

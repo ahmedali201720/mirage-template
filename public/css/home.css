@@ -454,33 +454,34 @@
 
 /* ************************************************************************************************************** */
 
-/* News Ticker Styles */
+/* Forex Ticker Styles */
 
-.simple-forex-marquee-container {
-    background-image: linear-gradient(to right bottom, #636466a1, #636466a1), url('../../assets/images/background2.jpg');
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    animation: animateBackgroundImage 100s linear infinite;
+#forex-ticker-container .bn-news {
+    background-color: #ffff;
     z-index: 2000;
     border-top: 1px solid rgb(230, 218, 218);
     border-bottom: 1px solid rgb(230, 218, 218);
     box-shadow: 0 0 10px var(--mainGrey);
+    padding: 0 0.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-.simple-forex-marquee-container .marquee-content-items {
-    list-style: none;
+.forex-item {
+    margin: 0 0.625rem;
 }
 
 .forex-item .item-header {
-    text-align: center;
+    color: #000;
     font-size: 16px;
     font-weight: 700;
-    color: white;
-    padding: 0.225rem;
+    text-align: center;
+    padding: 0.325rem 0;
 }
 
 .forex-item .item-info {
     text-align: center;
+    padding: 0.25rem 0;
+    font-weight: 700;
     font-size: 14px;
-    font-weight: 600;
 }

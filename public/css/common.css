@@ -40,3 +40,7 @@ body {
 .dynamic-text-align-reverse:lang(en) {
     text-align: right;
 }
+
+.text-main {
+    color: var(--mainOrange);
+}
