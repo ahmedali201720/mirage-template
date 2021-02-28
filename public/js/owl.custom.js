@@ -53,9 +53,7 @@ $(document).ready(function () {
         mouseDrag: true,
         touchDrag: true,
         autoplay: true,
-        slideTransition: 'linear',
         autoplayTimeout: 1000,
-        autoplaySpeed: 1000,
         autoplayHoverPause: true,
         rtl: true,
         responsive: {
