@@ -40,7 +40,7 @@ $(document).ready(function () {
                 items: 3.75
             },
             1600: {
-                items: 4.1
+                items: 4
             }
         },
     });
