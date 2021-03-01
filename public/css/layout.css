@@ -255,15 +255,19 @@
 }
 
 #date-container-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: -23%;
+    top: -21%;
     border: none;
     border-radius: 50%;
     box-shadow: 1px 1px 3px grey;
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     color: var(--mainOrange);
     outline: none !important;
+    font-size: 0.925rem;
 }
 
 #date-container-toggler:lang(ar) {
