@@ -23,9 +23,6 @@
     <link rel="stylesheet" href="../public/css/layout.responsive.css">
     <link rel="stylesheet" href="../public/css/home.css">
     <link rel="stylesheet" href="../public/css/home.responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
-        integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
-        crossorigin="anonymous" />
     <title>Mirage | Home</title>
 </head>
 
@@ -1003,23 +1000,161 @@
 
     <!-- EGX data section -->
 
-    <section class="egx-investment">
+    <section class="egx-investment my-xl-5 my-lg-4 my-3">
 
         <div class="container-fluid">
 
             <div class="row">
 
-                <div class="col-xl-6">
+                <div class="col-lg-8 col-md-7 col-sm-6">
+
+                    <div class="company-activity px-xl-5 px-lg-3 px-2 py-5">
+
+                        <div class="header text-center py-2 mb-4">
+                            <p class="mb-0">الأكثر نشاطاً</p>
+                        </div>
+
+                        <div class="tabs-container">
+                            <ul class="activity-tab-items">
+                                <li id="valueTab" class="activity-tab activity-tab-active" data-target="valueTable">
+                                    القيمة</li>
+                                <li id="qtyTab" class="activity-tab" data-target="qtyTable">الكمية</li>
+                                <li id="profitTab" class="activity-tab" data-target="profitTable">الرابحون</li>
+                                <li id="loseTab" class="activity-tab" data-target="loseTable">الخاسرون</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+
+                            <table class="table tab-table" id="valueTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">الشركة</th>
+                                        <th scope="col">اخر سعر</th>
+                                        <th scope="col">القيمة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="company-name">بايونيرز القابضة للأستثمارات المالية</td>
+                                        <td>5.59</td>
+                                        <td>148,319,146</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">الدلتا للسكر</td>
+                                        <td>11.87</td>
+                                        <td>102,913,782</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">المصرية لتطوير صناعة البناء (ليفت سلاب مصر )</td>
+                                        <td>3.52</td>
+                                        <td>56,501,031</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table tab-table" id="qtyTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">الشركة</th>
+                                        <th scope="col">اخر سعر</th>
+                                        <th scope="col">الكمية</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="company-name">بايونيرز القابضة للأستثمارات المالية</td>
+                                        <td>5.59</td>
+                                        <td>148,319,146</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">الدلتا للسكر</td>
+                                        <td>11.87</td>
+                                        <td>102,913,782</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">المصرية لتطوير صناعة البناء (ليفت سلاب مصر )</td>
+                                        <td>3.52</td>
+                                        <td>56,501,031</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table tab-table" id="profitTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">الشركة</th>
+                                        <th scope="col">اخر سعر</th>
+                                        <th scope="col">التغير %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="company-name">بايونيرز القابضة للأستثمارات المالية</td>
+                                        <td>5.59</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">الدلتا للسكر</td>
+                                        <td>11.87</td>
+                                        <td>8.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">المصرية لتطوير صناعة البناء (ليفت سلاب مصر )</td>
+                                        <td>3.52</td>
+                                        <td>9.91</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table tab-table" id="loseTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">الشركة</th>
+                                        <th scope="col">اخر سعر</th>
+                                        <th scope="col">التغير %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="company-name">بايونيرز القابضة للأستثمارات المالية</td>
+                                        <td>5.59</td>
+                                        <td>-3.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">الدلتا للسكر</td>
+                                        <td>11.87</td>
+                                        <td>-9.78</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="company-name">المصرية لتطوير صناعة البناء (ليفت سلاب مصر )</td>
+                                        <td>3.52</td>
+                                        <td>-5.21</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-                <div class="col-xl-12">
+                <div class="col-lg-4 col-md-5 col-sm-6">
 
-                    <div class="investment-categories py-5">
+                    <div class="investment-categories px-xl-5 px-lg-3 px-2 py-5">
 
-                        <div class="header text-center">
-                            <h3 class="text-info">فئات المستثمرين</h3>
+                        <div class="header text-center py-2 mb-4">
+                            <p class="mb-0">فئات المستثمرين</p>
                         </div>
+
+                        <figure class="highcharts-figure charts-section">
+                            <div id="investEntities" data-assoc="11.84" data-individuals="61.41"></div>
+                        </figure>
+
+                        <figure class="highcharts-figure charts-section">
+                            <div id="investCategories" data-egy="61.84" data-arabs="11.41" data-foreigns="8.75"></div>
+                        </figure>
 
                     </div>
 
@@ -1298,7 +1433,7 @@
     </footer>
 
 
-    <script src="../public/js/jquery-3.3.1.js"></script>
+    <script src="../public/js/jquery-3.5.1.js"></script>
     <script src="../public/js/popper.min.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
     <script src="../public/js/clipboard.min.js"></script>
@@ -1312,15 +1447,10 @@
     <script src="../public/js/features.js"></script>
     <script src="../public/js/functions.js"></script>
     <script src="../public/js/layout.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
-        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"
-        integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
-        integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
-        crossorigin="anonymous"></script>
+    <script src="../public/js/highcharts.js"></script>
+    <script src="../public/js/exporting.js"></script>
+    <script src="../public/js/export-data.js"></script>
+    <script src="../public/js/accessibility.js"></script>
     <script src="../public/js/chart.js"></script>
 </body>
 

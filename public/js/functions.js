@@ -139,3 +139,30 @@ function hideFixedDateTime(parent = $(".fixed-date-container")) {
     }, 100)
 }
 
+// ***********************************************************************************************
+
+function handleActivityTabClick(tab) {
+
+    const tables = $(".tab-table");
+    const tabs = $(".activity-tab");
+    const tableID = '#' + tab.attr('data-target');
+    const targetTable = $(tableID);
+
+    tabs.each(function () {
+        if (tab.attr('id') == $(this).attr('id')) {
+            if (!$(this).hasClass('activity-tab-active'))
+                $(this).addClass('activity-tab-active');
+        }
+        else
+            if ($(this).hasClass('activity-tab-active'))
+                $(this).removeClass('activity-tab-active');
+    })
+
+    tables.each(function () {
+        if (targetTable.attr('id') == $(this).attr('id'))
+            $(this).fadeIn(200)
+        else
+            $(this).css('display', 'none');
+    })
+
+}

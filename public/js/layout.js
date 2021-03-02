@@ -89,3 +89,9 @@ $('#forexTicker').breakingNews({
     scrollSpeed: 3,
     borderWidth: 0,
 });
+
+//*******************************************************************************************************
+
+$(".activity-tab").click(function () {
+    handleActivityTabClick($(this));
+})

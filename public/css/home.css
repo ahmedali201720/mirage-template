@@ -485,3 +485,95 @@
     font-weight: 700;
     font-size: 14px;
 }
+
+/* ********************************************************************************** */
+
+.investment-categories {
+    box-shadow: 0 0 5px rgb(197, 189, 189);
+    border-radius: 8px;
+}
+
+.investment-categories .header, .company-activity .header {
+    border-radius: 8px;
+    color: rgb(48, 182, 182);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.company-activity {
+    box-shadow: 0 0 5px rgb(197, 189, 189);
+    border-radius: 8px;
+}
+
+/***************************************************** ************************************************/
+
+.activity-tab-items {
+    list-style: none;
+    text-align: center;
+}
+
+.activity-tab-items .activity-tab {
+    display: inline-block;
+    margin: 0.625rem 0.325rem;
+    padding: 0.325rem 0.925rem;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid var(--mainOrange);
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.activity-tab-items .activity-tab:hover {
+    cursor: pointer;
+    background-color: var(--mainOrange);
+    color: #fff;
+}
+
+.activity-tab-active {
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+.table {
+    text-align: center;
+}
+
+.table thead {
+    background-color: var(--mainOrange);
+    color: #fff;
+    ;
+}
+
+.table .company-name {
+    color: rgb(49, 162, 182);
+}
+
+.table .company-name:hover {
+    color: var(--mainOrange);
+    cursor: pointer;
+}
+
+.table td {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#qtyTable, #profitTable, #loseTable {
+    display: none;
+}
+
+/* ********************************************************************************************************** */
+
+.highcharts-credits {
+    display: none;
+}
+
+.charts-section * {
+    direction: ltr !important;
+}
+
+.highcharts-title {
+    font-size: 14px !important;
+    font-weight: 700;
+    fill: orangered !important;
+}
