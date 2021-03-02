@@ -491,6 +491,7 @@
 .investment-categories {
     box-shadow: 0 0 5px rgb(197, 189, 189);
     border-radius: 8px;
+    height: 100%;
 }
 
 .investment-categories .header, .company-activity .header {
@@ -501,6 +502,7 @@
 }
 
 .company-activity {
+    height: 100%;
     box-shadow: 0 0 5px rgb(197, 189, 189);
     border-radius: 8px;
 }
@@ -510,6 +512,7 @@
 .activity-tab-items {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .activity-tab-items .activity-tab {
@@ -534,6 +537,10 @@
     color: white;
 }
 
+.tab-content {
+    overflow-x: auto;
+}
+
 .table {
     text-align: center;
 }
@@ -542,6 +549,10 @@
     background-color: var(--mainOrange);
     color: #fff;
     ;
+}
+
+.table thead th {
+    vertical-align: middle;
 }
 
 .table .company-name {
@@ -576,4 +587,19 @@
     font-size: 14px !important;
     font-weight: 700;
     fill: orangered !important;
+}
+
+/* **************************************************************************************************************** */
+
+.market-state, .egx-data {
+    height: 100%;
+    box-shadow: 0 0 5px rgb(197, 189, 189);
+    border-radius: 8px;
+}
+
+.market-state .header, .egx-data .header {
+    border-radius: 8px;
+    color: rgb(48, 182, 182);
+    font-weight: 700;
+    font-size: 20px;
 }

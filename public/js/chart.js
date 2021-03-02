@@ -108,4 +108,38 @@ $(document).ready(() => {
         }
     });
 
+    Highcharts.chart('marketState', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'الثابتون / الرابحون / الثابتون'
+        },
+        xAxis: {
+            categories: [' الرابحون ', 'الخاسرون ', 'الثابتون ']
+        },
+
+        plotOptions: {
+            series: {
+                stacking: 'normal',
+            }
+        },
+        series: [{
+            name: ' الثابتون',
+            data: [5, 0, 0]
+        }, {
+            name: ' الخاسرون',
+            data: [0, 2, 0],
+            color: '#bb2124',
+        }, {
+            name: ' الرابحون',
+            data: [0, 0, 4],
+            color: '#22bb33'
+        }
+        ],
+        exporting: {
+            enabled: false
+        }
+    });
+
 })
