@@ -164,7 +164,38 @@ $(document).ready(() => {
             },
 
             rangeSelector: {
-                selected: 1
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1day'
+                },
+                {
+                    type: 'week',
+                    count: 1,
+                    text: '1W'
+                },
+                {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                },
+                {
+                    type: 'month',
+                    count: 3,
+                    text: '3m',
+                },
+                {
+                    type: 'month',
+                    count: 6,
+                    text: '6m'
+                },
+                {
+                    type: 'year',
+                    count: 1,
+                    text: 'year'
+                }],
+                selected: 1,
+                inputEnabled: false
             },
 
             series: [{
@@ -207,7 +238,38 @@ $(document).ready(() => {
             },
 
             rangeSelector: {
-                selected: 1
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1day'
+                },
+                {
+                    type: 'week',
+                    count: 1,
+                    text: '1W'
+                },
+                {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                },
+                {
+                    type: 'month',
+                    count: 3,
+                    text: '3m',
+                },
+                {
+                    type: 'month',
+                    count: 6,
+                    text: '6m'
+                },
+                {
+                    type: 'year',
+                    count: 1,
+                    text: 'year'
+                }],
+                selected: 1,
+                inputEnabled: false
             },
 
             series: [{
@@ -250,7 +312,38 @@ $(document).ready(() => {
             },
 
             rangeSelector: {
-                selected: 1
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1day'
+                },
+                {
+                    type: 'week',
+                    count: 1,
+                    text: '1W'
+                },
+                {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                },
+                {
+                    type: 'month',
+                    count: 3,
+                    text: '3m',
+                },
+                {
+                    type: 'month',
+                    count: 6,
+                    text: '6m'
+                },
+                {
+                    type: 'year',
+                    count: 1,
+                    text: 'year'
+                }],
+                selected: 1,
+                inputEnabled: false
             },
 
             series: [{
@@ -293,7 +386,38 @@ $(document).ready(() => {
             },
 
             rangeSelector: {
-                selected: 1
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1day'
+                },
+                {
+                    type: 'week',
+                    count: 1,
+                    text: '1W'
+                },
+                {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                },
+                {
+                    type: 'month',
+                    count: 3,
+                    text: '3m',
+                },
+                {
+                    type: 'month',
+                    count: 6,
+                    text: '6m'
+                },
+                {
+                    type: 'year',
+                    count: 1,
+                    text: 'year'
+                }],
+                selected: 1,
+                inputEnabled: false
             },
 
             series: [{
@@ -336,7 +460,38 @@ $(document).ready(() => {
             },
 
             rangeSelector: {
-                selected: 1
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1day'
+                },
+                {
+                    type: 'week',
+                    count: 1,
+                    text: '1W'
+                },
+                {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                },
+                {
+                    type: 'month',
+                    count: 3,
+                    text: '3m',
+                },
+                {
+                    type: 'month',
+                    count: 6,
+                    text: '6m'
+                },
+                {
+                    type: 'year',
+                    count: 1,
+                    text: 'year'
+                }],
+                selected: 1,
+                inputEnabled: false
             },
 
             series: [{
@@ -379,7 +534,38 @@ $(document).ready(() => {
             },
 
             rangeSelector: {
-                selected: 1
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1day'
+                },
+                {
+                    type: 'week',
+                    count: 1,
+                    text: '1W'
+                },
+                {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                },
+                {
+                    type: 'month',
+                    count: 3,
+                    text: '3m',
+                },
+                {
+                    type: 'month',
+                    count: 6,
+                    text: '6m'
+                },
+                {
+                    type: 'year',
+                    count: 1,
+                    text: 'year'
+                }],
+                inputEnabled: false,
+                selected: 1,
             },
 
             series: [{
@@ -411,6 +597,12 @@ $(document).ready(() => {
                 }]
             }
         });
+    });
+
+    Highcharts.setOptions({
+        lang: {
+            rangeSelectorZoom: ''
+        }
     });
 
 })
