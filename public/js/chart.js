@@ -113,10 +113,10 @@ $(document).ready(() => {
             type: 'bar'
         },
         title: {
-            text: 'الثابتون / الرابحون / الثابتون'
+            text: 'الثابتون / الرابحون / الخاسرون'
         },
         xAxis: {
-            categories: [' الرابحون ', 'الخاسرون ', 'الثابتون ']
+            categories: [' الرابحون ', 'الخاسرون ', 'الثابتون ', 'الإجمالى']
         },
 
         plotOptions: {
@@ -125,16 +125,22 @@ $(document).ready(() => {
             }
         },
         series: [{
-            name: ' الثابتون',
-            data: [5, 0, 0]
+            name: ' الرابحون',
+            data: [5, 0, 0, 5],
+            color: '#22bb33'
         }, {
             name: ' الخاسرون',
-            data: [0, 2, 0],
+            data: [0, 2, 0, 2],
             color: '#bb2124',
         }, {
-            name: ' الرابحون',
-            data: [0, 0, 4],
-            color: '#22bb33'
+            name: ' الثابتون',
+            data: [0, 0, 4, 4],
+            color: '#636466'
+        },
+        {
+            name: ' الإجمالى',
+            data: [0, 0, 0, 0],
+            showInLegend: false,
         }
         ],
         exporting: {

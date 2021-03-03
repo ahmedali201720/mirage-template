@@ -44,3 +44,7 @@ body {
 .text-main {
     color: var(--mainOrange);
 }
+
+.text-grey {
+    color: #636466;
+}
