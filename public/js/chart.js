@@ -163,6 +163,10 @@ $(document).ready(() => {
                 height: 400
             },
 
+            yAxis: {
+                opposite: false
+            },
+
             rangeSelector: {
                 buttons: [{
                     type: 'day',
@@ -235,6 +239,10 @@ $(document).ready(() => {
         const chart = Highcharts.stockChart('egx30CapChart', {
             chart: {
                 height: 400
+            },
+
+            yAxis: {
+                opposite: false
             },
 
             rangeSelector: {
@@ -311,6 +319,10 @@ $(document).ready(() => {
                 height: 400
             },
 
+            yAxis: {
+                opposite: false
+            },
+
             rangeSelector: {
                 buttons: [{
                     type: 'day',
@@ -383,6 +395,10 @@ $(document).ready(() => {
         const chart = Highcharts.stockChart('egx50Chart', {
             chart: {
                 height: 400
+            },
+
+            yAxis: {
+                opposite: false
             },
 
             rangeSelector: {
@@ -459,6 +475,10 @@ $(document).ready(() => {
                 height: 400
             },
 
+            yAxis: {
+                opposite: false
+            },
+
             rangeSelector: {
                 buttons: [{
                     type: 'day',
@@ -531,6 +551,9 @@ $(document).ready(() => {
         const chart = Highcharts.stockChart('egx100Chart', {
             chart: {
                 height: 400
+            },
+            yAxis: {
+                opposite: false
             },
 
             rangeSelector: {
