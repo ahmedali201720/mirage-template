@@ -95,3 +95,9 @@ $('#forexTicker').breakingNews({
 $(".activity-tab").click(function () {
     handleActivityTabClick($(this));
 })
+
+// *****************************************************************************************************
+
+$(".egx-tab").click(function () {
+    handleEgxTabClick($(this));
+})

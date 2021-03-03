@@ -275,13 +275,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
+    border: 1px solid grey;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--mainOrange);
-    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -591,6 +589,10 @@
 
 /* **************************************************************************************************************** */
 
+.market-state {
+    overflow-x: auto;
+}
+
 .market-state, .egx-data {
     height: 100%;
     box-shadow: 0 0 5px rgb(197, 189, 189);
@@ -604,8 +606,60 @@
     font-size: 20px;
 }
 
+.market-state-table {
+    direction: rtl !important;
+}
+
 .market-state-table td {
     font-size: 14px !important;
     font-weight: 700 !important;
     vertical-align: middle;
 }
+
+.egx-tab-items {
+    direction: rtl !important;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.egx-tab-items .egx-tab {
+    display: inline-block;
+    margin: 0.625rem 0.325rem;
+    padding: 0.325rem 0.925rem;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid var(--mainOrange);
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.egx-tab-items .egx-tab:hover {
+    cursor: pointer;
+    background-color: var(--mainOrange);
+    color: #fff;
+}
+
+.egx-tab-active {
+    background-color: var(--mainOrange);
+    color: white;
+}
+
+#egx30CapChartContainer, #egx30TrChartContainer, #egx50ChartContainer, #egx70ChartContainer, #egx100ChartContainer {
+    display: none;
+}
+
+.egx-data-gist {
+    direction: rtl !important;
+    font-size: 14px;
+}
+
+.egx-data-gist p {
+    text-align: center;
+}
+
+.percentage-value {
+    direction: ltr !important;
+}
+
+/* ********************************************************************************************** */

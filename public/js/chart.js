@@ -7,6 +7,8 @@ $(document).ready(() => {
     const arabsPercentage = parseFloat(document.getElementById("investCategories").getAttribute('data-arabs'));
     const foreignsPercentage = parseFloat(document.getElementById("investCategories").getAttribute('data-foreigns'));
 
+    // investment chart
+
     Highcharts.chart('investEntities', {
         chart: {
             plotBackgroundColor: null,
@@ -55,6 +57,8 @@ $(document).ready(() => {
             enabled: false
         }
     });
+
+    // investment categories
 
     Highcharts.chart('investCategories', {
         chart: {
@@ -108,6 +112,8 @@ $(document).ready(() => {
         }
     });
 
+    //market state chart
+
     Highcharts.chart('marketState', {
         chart: {
             type: 'bar'
@@ -146,6 +152,265 @@ $(document).ready(() => {
         exporting: {
             enabled: false
         }
+    });
+
+
+    // EGX 30 Chart
+
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-c.json', data => {
+        const chart = Highcharts.stockChart('egx30Chart', {
+            chart: {
+                height: 400
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            series: [{
+                name: 'EGX30',
+                data: data,
+                type: 'area',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        chart: {
+                            height: 300
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        navigator: {
+                            enabled: false
+                        }
+                    }
+                }]
+            }
+        });
+    });
+
+    // EGX 30 CAP Chart
+
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-c.json', data => {
+        const chart = Highcharts.stockChart('egx30CapChart', {
+            chart: {
+                height: 400
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            series: [{
+                name: 'EGX30 CAP',
+                data: data,
+                type: 'area',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        chart: {
+                            height: 300
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        navigator: {
+                            enabled: false
+                        }
+                    }
+                }]
+            }
+        });
+    });
+
+    // EGX 30 TR Chart
+
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-c.json', data => {
+        const chart = Highcharts.stockChart('egx30TrChart', {
+            chart: {
+                height: 400
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            series: [{
+                name: 'EGX30TR',
+                data: data,
+                type: 'area',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        chart: {
+                            height: 300
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        navigator: {
+                            enabled: false
+                        }
+                    }
+                }]
+            }
+        });
+    });
+
+    // EGX 50 Chart
+
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-c.json', data => {
+        const chart = Highcharts.stockChart('egx50Chart', {
+            chart: {
+                height: 400
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            series: [{
+                name: 'EGX50',
+                data: data,
+                type: 'area',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        chart: {
+                            height: 300
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        navigator: {
+                            enabled: false
+                        }
+                    }
+                }]
+            }
+        });
+    });
+
+    // EGX 70 Chart
+
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-c.json', data => {
+        const chart = Highcharts.stockChart('egx70Chart', {
+            chart: {
+                height: 400
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            series: [{
+                name: 'EGX70',
+                data: data,
+                type: 'area',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        chart: {
+                            height: 300
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        navigator: {
+                            enabled: false
+                        }
+                    }
+                }]
+            }
+        });
+    });
+
+    // EGX 100 Chart
+
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-c.json', data => {
+        const chart = Highcharts.stockChart('egx100Chart', {
+            chart: {
+                height: 400
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            series: [{
+                name: 'EGX100',
+                data: data,
+                type: 'area',
+                threshold: null,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        chart: {
+                            height: 300
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        navigator: {
+                            enabled: false
+                        }
+                    }
+                }]
+            }
+        });
     });
 
 })

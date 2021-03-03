@@ -166,3 +166,31 @@ function handleActivityTabClick(tab) {
     })
 
 }
+
+/* *********************************************************************************************** */
+
+function handleEgxTabClick(tab) {
+
+    const charts = $(".egx-chart");
+    const tabs = $(".egx-tab");
+    const chartID = '#' + tab.attr('data-target');
+    const targetChart = $(chartID);
+
+    tabs.each(function () {
+        if (tab.attr('id') == $(this).attr('id')) {
+            if (!$(this).hasClass('egx-tab-active'))
+                $(this).addClass('egx-tab-active');
+        }
+        else
+            if ($(this).hasClass('egx-tab-active'))
+                $(this).removeClass('egx-tab-active');
+    })
+
+    charts.each(function () {
+        if (targetChart.attr('id') == $(this).attr('id'))
+            $(this).fadeIn(400)
+        else
+            $(this).css('display', 'none');
+    })
+
+}
