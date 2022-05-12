@@ -9,27 +9,6 @@
     z-index: 200;
 }
 
-/* .owl-dot {
-    width: 15px;
-    height: 10px;
-    border-radius: 50%;
-    outline: none !important;
-    transition: all 0.4s ease;
-    background-color: rgb(190, 190, 190) !important;
-    margin: 0 3px;
-}
-
-.owl-dot:hover {
-    background-color: white !important;
-}
-
-.owl-dots .active {
-    width: 30px;
-    height: 12px;
-    border-radius: 5px;
-    background-color: white !important;
-} */
-
 .owl-nav {
     position: absolute;
     top: 40%;
