@@ -15,6 +15,7 @@
     <!-- FontAwesome style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>المرشر | دخول</title>
 </head>
 
@@ -22,12 +23,126 @@
 
     <section class="auth-section" id="authSection">
 
+        <div class="banner py-lg-5 py-4">
 
+            <div class="logo text-center">
+                <img src="./img/Logo.png" alt="Mirage Brokerage">
+            </div>
+
+
+            <div class="footer">
+
+                <div class="social-icons mb-3">
+                    <a href="#" class="icon me-1">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon me-1">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="icon me-1">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fab fa-viber"></i>
+                    </a>
+                </div>
+
+                <div class="wrapper text-center text-white">
+
+                    <p class="mb-1">
+                        ليس لديك حساب بعد ؟
+                    </p>
+
+                    <a href="#" class="text-white">حساب جديد</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="form-content py-5 px-lg-5 px-4">
+
+            <div class="form-container">
+
+                <h3 class="head fw-bold">
+                    <i class="fa fa-lock me-2"></i> تسجيل الدخول
+                </h3>
+
+                <form class="auth-form mt-5 mb-4" id="loginForm">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">اسم المستخدم</label>
+                        <div class="input-wrapper">
+                            <input type="text" name="username" id="username" class="form-control" placeholder="ادخل اسم المستخدم " autofocus autocomplete="off">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">كلمة السر</label>
+                        <div class="input-wrapper password-wrapper">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="ادحل كلمة السر الخاصة بك">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                    </div>
+
+                    <div class="mb-xl-5 mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">تذكر كلمة المرور</label>
+                    </div>
+
+                    <button type="submit" class="form-action-btn  mt-4">تسجيل دخول</button>
+
+                </form>
+
+                <div class="hint text-center">
+                    <p class="mb-1 text-secondary">
+                        هل نسيت كلمة السر ؟
+                        <a href="#" style="color:#f17a42;">اضغط هنا</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            var validator = $("#loginForm").validate({
+                rules: {
+                    username: "required",
+                    password: {
+                        required: true,
+                    }
+                },
+                messages: {
+                    username: "من فضلك أدخل اسم المستخدم",
+                    password: {
+                        required: "من فضلك أدخل كلمة السر",
+                    }
+                },
+
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element.parent());
+                },
+
+                submitHandler: function(form) {
+                    form.submit();
+                },
+
+            });
+
+        });
+    </script>
 
 </body>
 
